@@ -1,38 +1,22 @@
 ---
-title: Page Not Found
+title: 404 Not Found
+permalink: 404.html
+sitemap: false
 ---
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	{%- include head.html -%}
-	<style>
-	h1 {
-		background-color: #eee;
-		width: 220px;
-		height: 220px;
-		border-radius: 100%;
-		display: flex;
-		justify-content: center;
-		align-items: center
-	}
-	body {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-		font-size: 20px;
-		height: 80vh;
-	}
-	p {
-		font-size: 1.5em;
-		text-align: center;
-		margin: 0;
-		line-height: 2em;
-	}
-	</style>
-</head>
-<body>
-	<h1>404</h1>
-	<p>Page not found.</p>
-</body>
+<html>
+  {% include head.html %}
+  <body>
+    {% include nav.html %}
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="no-anchor">404 Not Found</h1>
+        <p>We can't find that. Would you like to visit our homepage instead?</p>
+        <p><a class="btn btn-outline-inverse btn-lg" href="/" role="button">Go Home</a></p>
+      </div>
+    </div>
+    {% include footer.html %}
+  </body>
 </html>
